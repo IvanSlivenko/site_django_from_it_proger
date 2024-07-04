@@ -1,0 +1,34 @@
+{% extends "main/base.html" %}
+
+
+{% block  title %}
+    {{ title }}
+{% endblock %}
+
+
+{% block  content %}
+
+
+    <h1>Головна</h1>
+
+    {% if tasks %}
+        {% for task in tasks %}
+        <div class='alert alert-warning mt-2'>
+
+                {% comment %} <a href="">{{ task.title}}</a> {% endcomment %}
+                <h3>{{ task.title }}</h3> 
+                <p>{{ task.task}}</p>
+                <p>{{ task.date_task}}</p>
+                <p>{{ task.status}}</p>
+                {% comment %} <br> {% endcomment %}
+        </div>
+        {% endfor%}
+    {% else %}
+        <p> Завдання відсутні</p>
+
+    {% endif %}
+    
+    <p>Просто текст Просто текст Просто текст Просто текст Просто текст</p>
+
+{% endblock %}
+

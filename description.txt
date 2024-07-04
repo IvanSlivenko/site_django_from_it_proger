@@ -1,0 +1,108 @@
+1
+створюємо віртуальне середовище
+python -m venv venv
+
+2
+Активуємо віртуальне середовище
+venv\Scripts\activate
+
+3
+інсталюємо джанго
+pip install django
+
+4
+створюємо проект джанго
+django-admin startproject taskmanager
+
+5
+
+запуск локального сервера
+python manage.py runserver
+
+6
+створюємо додаток джанго
+django-admin startapp main
+
+7
+taskmanager/urls.py-> main/urls.py-> include
+
+taskmanager/urls.py-> main/urls.py-> main/wiews.py.index
+
+8
+style
+https://www.bootstrapcdn.com
+
+9
+example
+https://getbootstrap.com/docs/5.3/examples/pricing/
+
+10
+create tables in database
+models.py - > class Task(models.Model)
+
+
+11
+create migrations
+python manage.py makemigrations
+
+
+
+12
+perform migrations
+python manage.py migrate
+
+-----------------------------------------
+13
+http://127.0.0.1:8000/admin
+create superuser
+python manage.py createsuperuser
+
+login : admin
+password : admin
+------------------------------------------
+
+14
+register tables
+
+main-> admin.py
+
+admin.site.register(Task)
+
+15
+models.py
+verbose_name
+verbose_name_plural
+
+16
+file
+forms.py
+
+
+in teg form:
+{% csrf_token %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------
+https://youtu.be/6K83dgjkQNw
+
+59 : 10
+
+----------------------------------------
+
+https://youtu.be/Zac6HwhaPSw?list=PL81zTpL449O07hyA8Cp3GzB9F7yfumAnI 
+
+Dmitriy Mischuk
